@@ -4,8 +4,27 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
   height: 100vh;
-  margin-top: 3rem;
+
+  @media (max-width: 768px) {
+    padding: 0 1rem;
+    justify-content: center;
+  }
+
+  .logo {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 1rem;
+    position: absolute;
+    top: 2rem;
+    right: 4rem;
+    transition: transform 0.5s ease;
+  }
+
+  .logo:hover {
+    transform: rotate(360deg);
+  }
 
   .btn {
     margin-top: 1rem;
@@ -101,11 +120,16 @@ export const Options = styled.div`
   input[type='radio'] {
     margin-right: 0.25rem;
   }
+
+  @media (max-width: 768px) {
+    flex-direction: row;
+    gap: 1rem;
+  }
 `;
 
 export const Title = styled.h1`
   font-size: 2rem;
-  margin-bottom: 1rem;
+  margin: 2rem 0;
 `;
 
 export const Image = styled.img`
@@ -127,5 +151,10 @@ export const Footer = styled.footer`
   a {
     color: #007bff;
     text-decoration: none;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 0.8rem;
+    text-align: center;
   }
 `;

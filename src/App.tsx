@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { FiCopy } from 'react-icons/fi';
+import Logo from './assets/favicon.svg';
 import { Container, Footer, Options, RandomImage, Title, Wrapper } from './styles/Style';
 
 const sizes = ['100', '200', '300'];
@@ -35,6 +36,7 @@ function App() {
   return (
     <Container>
       <Title>Avatar Generate</Title>
+      <img className="logo" src={ Logo } alt="Logo" />
       <RandomImage
         src={ avatar }
         alt="Random Avatar"
