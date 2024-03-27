@@ -35,7 +35,7 @@ function App() {
 
   return (
     <Container>
-      <Title>Avatar Generate</Title>
+      <Title>Avatar URL Generator</Title>
       <img className="logo" src={ Logo } alt="Logo" />
       <RandomImage
         src={ avatar }
