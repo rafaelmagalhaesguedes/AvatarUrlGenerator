@@ -1,4 +1,4 @@
-# Avatar Generator
+# Avatar URL Generator
 
 This is a simple Avatar Generator built with React. It uses the [Rick and Morty API](https://rickandmortyapi.com/api/character) to generate random avatars.
 
