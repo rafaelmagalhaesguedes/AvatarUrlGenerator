@@ -105,7 +105,7 @@ function App() {
           {' '}
           Rafael Guedes
           {' '}
-          <a href="https://github.com/rafaelmagalhaesguedes/" target="_blank" rel="noreferrer">
+          <a href="https://github.com/rafaelmagalhaesguedes/AvatarGenerate" target="_blank" rel="noreferrer">
             - GitHub
           </a>
         </p>
