@@ -94,7 +94,7 @@ function App() {
 
       <Wrapper>
         <input className="ipt" type="text" value={ avatar } data-testid="url" readOnly />
-        <button className="copy-button" onClick={ copyToClipboard }>
+        <button data-testid="copied" className="copy-button" onClick={ copyToClipboard }>
           <FiCopy size={ 20 } />
           {copied && <span className="tooltip">Copied!</span>}
         </button>
