@@ -39,7 +39,7 @@ function App() {
 
       <Header>
         <Title>Avatar URL Generator</Title>
-        <img className="logo" src={ Logo } alt="Logo" />
+        <img className="logo" src={ Logo } alt="Logo" data-testid="logo" />
         <RandomImage
           src={ avatar }
           alt="Random Avatar"
@@ -93,7 +93,7 @@ function App() {
       </Section>
 
       <Wrapper>
-        <input className="ipt" type="text" value={ avatar } readOnly />
+        <input className="ipt" type="text" value={ avatar } data-testid="url" readOnly />
         <button className="copy-button" onClick={ copyToClipboard }>
           <FiCopy size={ 20 } />
           {copied && <span className="tooltip">Copied!</span>}
