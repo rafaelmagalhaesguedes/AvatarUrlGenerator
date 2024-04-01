@@ -11,6 +11,13 @@ export const Container = styled.div`
     padding: 0 1rem;
     justify-content: center;
   }
+`;
+
+export const Header = styled.header`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
 
   .logo {
     width: 100px;
@@ -35,6 +42,26 @@ export const Container = styled.div`
     border: none;
     border-radius: 2rem;
     cursor: pointer;
+  }
+`;
+
+export const Section = styled.section`
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 2rem;
+
+  label, input {
+    cursor: pointer;
+  }
+  
+  input[type='radio'] {
+    margin-right: 0.25rem;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: row;
+    gap: 1rem;
   }
 `;
 
@@ -104,26 +131,6 @@ export const Wrapper = styled.div`
 
   label, input {
     cursor: pointer;
-  }
-`;
-
-export const Options = styled.div`
-  display: flex;
-  justify-content: center;
-  margin-top: 2rem;
-  gap: 2rem;
-
-  label, input {
-    cursor: pointer;
-  }
-  
-  input[type='radio'] {
-    margin-right: 0.25rem;
-  }
-
-  @media (max-width: 768px) {
-    flex-direction: row;
-    gap: 1rem;
   }
 `;
 

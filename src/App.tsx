@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import { FiCopy } from 'react-icons/fi';
 import Logo from './assets/favicon.svg';
-import { Container, Footer, Options, RandomImage, Title, Wrapper } from './styles/Style';
+import {
+  Container, Footer, Header, RandomImage, Section, Title, Wrapper } from './styles/Style';
 
 const sizes = ['100', '200', '300'];
 
@@ -35,21 +36,24 @@ function App() {
 
   return (
     <Container>
-      <Title>Avatar URL Generator</Title>
-      <img className="logo" src={ Logo } alt="Logo" />
-      <RandomImage
-        src={ avatar }
-        alt="Random Avatar"
-        size={ size }
-      />
-      <input
-        className="btn"
-        type="button"
-        value="Generate"
-        onClick={ avatarGenerate }
-      />
 
-      <Options>
+      <Header>
+        <Title>Avatar URL Generator</Title>
+        <img className="logo" src={ Logo } alt="Logo" />
+        <RandomImage
+          src={ avatar }
+          alt="Random Avatar"
+          size={ size }
+        />
+        <input
+          className="btn"
+          type="button"
+          value="Generate"
+          onClick={ avatarGenerate }
+        />
+      </Header>
+
+      <Section>
         <label>
           <input
             type="radio"
@@ -60,8 +64,7 @@ function App() {
           />
           {' '}
           {sizes[0]}
-          x
-          {sizes[0]}
+          px
         </label>
         <label>
           <input
@@ -73,8 +76,7 @@ function App() {
           />
           {' '}
           {sizes[1]}
-          x
-          {sizes[1]}
+          px
         </label>
         <label>
           <input
@@ -86,10 +88,9 @@ function App() {
           />
           {' '}
           {sizes[2]}
-          x
-          {sizes[2]}
+          px
         </label>
-      </Options>
+      </Section>
 
       <Wrapper>
         <input className="ipt" type="text" value={ avatar } readOnly />

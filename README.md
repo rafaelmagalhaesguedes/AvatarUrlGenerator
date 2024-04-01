@@ -1,4 +1,15 @@
-# Avatar URL Generator
+# Avatar URL Generator 👥
+
+<div style="display:flex;gap: 1rem;">
+    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAF" alt="React">
+    <img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white" alt="TypeScript">
+</div>
+
+<br />
+
+<img width="800" src="src/assets/app.png">
+
+<br />
 
 This is a simple Avatar URL Generator built with React. It uses the [Rick and Morty API](https://rickandmortyapi.com/api/character) to generate random avatars.
 
