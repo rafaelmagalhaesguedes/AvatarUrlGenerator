@@ -25,6 +25,21 @@ describe('Tests App', () => {
     expect(button).toBeInTheDocument();
   });
 
+  it('should click generate button', () => {
+    render(<App />);
+    const button = screen.getByRole('button', { name: BUTTON });
+    button.click();
+
+    const avatar = screen.getByAltText('Random Avatar');
+    expect(avatar).toBeInTheDocument();
+  });
+
+  it('should render random avatar', () => {
+    render(<App />);
+    const avatar = screen.getByAltText('Random Avatar');
+    expect(avatar).toBeInTheDocument();
+  });
+
   it('should render size radio buttons', () => {
     render(<App />);
     const size = screen.getAllByRole('radio');
